@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+:root {
+/* Dark background */
+    --dark-bg: #0d0c1d;
+
+/* Neon colors */
+    --neon-red: #ff0000;
+    --neon-blue: #00ffff;
+    --neon-green: #00ff00;
+    --neon-yellow: #ffff00;
+    --neon-pink: #ff1493;
+    --neon-cream: #fffcf5;
+    --neon-violet: #9400D3;
+}
+
+@keyframes pulse {
+    0% {
+        color: var(--neon-blue);
+        text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue), 0 0 30px var(--neon-blue), 0 0 40px var(--neon-blue);
+    }
+    25% {
+        color: var(--neon-pink);
+        text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink), 0 0 30px var(--neon-pink), 0 0 40px var(--neon-pink);
+    }
+    50% {
+        color: var(--neon-red);
+        text-shadow: 0 0 10px var(--neon-red), 0 0 20px var(--neon-red), 0 0 30px var(--neon-red), 0 0 40px var(--neon-red);
+    }
+    75% {
+        color: var(--neon-yellow);
+        text-shadow: 0 0 10px var(--neon-yellow), 0 0 20px var(--neon-yellow), 0 0 30px var(--neon-yellow), 0 0 40px var(--neon-yellow);
+    }
+    100% {
+        color: var(--neon-violet);
+        text-shadow: 0 0 10px var(--neon-violet), 0 0 20px var(--neon-violet), 0 0 30px var(--neon-violet), 0 0 40px var(--neon-violet);
+    }
+}
+
+.ring-menu {
+  position: fixed;
+  right: -48px;
+  top: 40%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ring-button {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 2px solid;
+    background: transparent;
+    transition: transform .3s ease-in-out;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+.ring-button:nth-child(1) {
+    transform: rotate(0deg) translateY(-230px) ;
+}
+
+.ring-button:nth-child(2) {
+    transform: rotate(-45deg) translateY(-230px) ;
+}
+
+.ring-button:nth-child(3) {
+    transform: rotate(-90deg) translateY(-230px) ;
+}
+
+.ring-button:nth-child(4) {
+    transform: rotate(-135deg) translateY(-230px) ;
+}
+
+.ring-button:nth-child(5) {
+    transform: rotate(-180deg) translateY(-230px) ;
+}
+
+.ring-button:nth-child(1):hover {
+    cursor: pointer;
+  transform: rotate(0deg) translateY(-230px) scale(1.8) rotate(360deg); animation: pulse 4s infinite;
+}
+
+.ring-button:nth-child(2):hover {
+    cursor: pointer;
+  transform: rotate(-45deg) translateY(-230px) scale(1.8) rotate(405deg); animation: pulse 4s infinite;
+}
+
+.ring-button:nth-child(3):hover {
+    cursor: pointer;
+  transform: rotate(-90deg) translateY(-230px) scale(1.8) rotate(450deg); animation: pulse 4s infinite;
+}
+
+.ring-button:nth-child(4):hover {
+    cursor: pointer;
+  transform: rotate(-135deg) translateY(-230px) scale(1.8) rotate(496deg); animation: pulse 4s infinite;
+}
+
+.ring-button:nth-child(5):hover {
+    cursor: pointer;
+  transform: rotate(-180deg) translateY(-230px) scale(1.8) rotate(540deg); animation: pulse 4s infinite;
+}
