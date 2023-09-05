@@ -17,22 +17,27 @@
 @keyframes pulse {
     0% {
         color: var(--neon-blue);
+        border-color: var(--neon-blue);
         text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue), 0 0 30px var(--neon-blue), 0 0 40px var(--neon-blue);
     }
     25% {
         color: var(--neon-pink);
+        border-color: var(--neon-pink);
         text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink), 0 0 30px var(--neon-pink), 0 0 40px var(--neon-pink);
     }
     50% {
         color: var(--neon-red);
+        border-color: var(--neon-red);
         text-shadow: 0 0 10px var(--neon-red), 0 0 20px var(--neon-red), 0 0 30px var(--neon-red), 0 0 40px var(--neon-red);
     }
     75% {
         color: var(--neon-yellow);
+        border-color: var(--neon-yellow);
         text-shadow: 0 0 10px var(--neon-yellow), 0 0 20px var(--neon-yellow), 0 0 30px var(--neon-yellow), 0 0 40px var(--neon-yellow);
     }
     100% {
         color: var(--neon-violet);
+        border-color: var(--neon-violet);
         text-shadow: 0 0 10px var(--neon-violet), 0 0 20px var(--neon-violet), 0 0 30px var(--neon-violet), 0 0 40px var(--neon-violet);
     }
 }
@@ -46,15 +51,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--neon-green);
 }
 
 .ring-button {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     text-decoration: none;
     border-radius: 50%;
-    border: 2px solid;
+    border: .20px;
+    border-style: dashed;
     background: transparent;
     transition: transform .3s ease-in-out;
     text-align: center;
@@ -62,6 +69,9 @@
     justify-content: center;
     align-items: center;
     padding: 30px;
+    background-image: url('./ring.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
@@ -109,3 +119,4 @@
     cursor: pointer;
   transform: rotate(-180deg) translateY(-230px) scale(1.8) rotate(540deg); animation: pulse 4s infinite;
 }
+

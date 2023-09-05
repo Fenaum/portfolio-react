@@ -45,6 +45,12 @@ body {
     background-color: var(--dark-bg);
     color: var(--neon-cream);
     font-family: 'Orbitron', sans-serif;
+    background-image: url(./wallpaper.jpg);
+    background-size: cover;
+}
+
+a:hover {
+    cursor: pointer;
 }
 
 nav {
@@ -73,17 +79,20 @@ hr {
     align-items: center;
 }
 
-ul.links > li {
+ul.links > li, ul.links > li > a {
     color: var(--neon-pink);
     padding: 0px 10px;
     list-style: none;
+    text-decoration: none;
 }
 
-.my-title {
+.my-title{
     letter-spacing: 5px;
     margin: auto;
     color: var(--neon-blue);
     animation: pulse 4s infinite;
+    font-size: 30px;
+    text-decoration: none;
 }
 
 .about {
@@ -91,21 +100,14 @@ ul.links > li {
     align-items: center;
     text-align: center;
     padding: 50px 50px;
-    height: 80vh;.ring-menu {
-      position: fixed; /* Fix position on the right side of the page */
-      right: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; /* Center items vertically */
-      align-items: center; /* Center items horizontally */
-    }
-
+    height: 80vh;
 }
 
 .footer{
     display: flex;
     justify-content: center;
     padding: 36px 36px;
+    color: var(--neon-green);
 }
 
 #developer-role {
@@ -162,13 +164,46 @@ div.about > section > p {
     align-items: center;
     justify-content: space-around;
     width: 300px;
-    color: var(--neon-violet);
+    color: var(--neon-green);
 }
 
 .portfolio-link {
     color: var(--neon-green);
 }
 
-.portfolio-link:hover {
+.my-projects {
+    color: var(--neon-blue);
+    position: fixed;
+    background-image: url(../components/RingMenu/myprojects.png);
+    background-size: 200px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    right: -5px;
+    top: 40%;
+    animation: pulse 4s infinite;
+}
+
+.my-projects-text {
+    margin-left: 30px;
+}
+
+.my-projects-text:hover {
     cursor: pointer;
-};
+}
+
+.socialMediaIcon {
+    width: 24px;
+    height: 24px;
+    border-radius: 10px;
+}
+
+.socialMediaIcon:hover, socialMediaIcon:focus {
+    box-shadow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green), 0 0 30px var(--neon-green), 0 0 40px var(--neon-green);
+    transition: all 0.3s ease;
+    outline: none;
+}
+

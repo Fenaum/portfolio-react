@@ -1,19 +1,32 @@
+import InstagramIcon from "../assets/instagram.svg";
+import GithubIcon from "../assets/github.svg";
+import YoutubeIcon from "../assets/youtube.svg";
+import { Link } from 'react-router-dom'
+
 export default function Header() {
     return (
         <header className="Header">
             <nav>
                 <div className="link-tree">
-                    <a className="socialMediaLink">Instagram</a>
-                    <a className="socialMediaLink">Github</a>
-                    <a className="socialMediaLink">Youtube</a>
+                    <div className="link-tree">
+                        <a>
+                            <img src={InstagramIcon} alt="Instagram" className="socialMediaIcon" />
+                        </a>
+                        <a>
+                            <img src={GithubIcon} alt="Github" className="socialMediaIcon" />
+                        </a>
+                        <a>
+                            <img src={YoutubeIcon} alt="Youtube" className="socialMediaIcon" />
+                        </a>
+                    </div>
                 </div>
-                <h2 className="my-title">RAYMOND.</h2>
+                <Link to="/" className="my-title">RAYMOND.</Link>
                 <ul className="links">
                     <li>
                         <a>About</a>
                     </li>
                     <li>
-                        <a>Contact</a>
+                        <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
             </nav>

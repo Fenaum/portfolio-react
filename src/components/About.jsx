@@ -1,4 +1,3 @@
-import profileImage from "../../public/images/profile.jpeg"
 import RingMenu from "../components/RingMenu/RingMenu"
 
 export default function About() {
@@ -25,7 +24,9 @@ export default function About() {
             </section>
             <hr></hr>
             <section className="my-portfolio">
-                <a className="portfolio-link">My Projects</a>
+                <div className="my-projects">
+                    <a className="my-projects-text">:MY PROJECTS</a>
+                </div>
                 <RingMenu />
             </section>
         </div>
