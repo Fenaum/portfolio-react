@@ -9,17 +9,37 @@ export default function Contact() {
     });
 
     const handleChange = (event) => {
+        
         setFormState({
             ...formState,
             [event.target.name]: event.target.value,
         });
         console.log(formState);
     };
-
+    
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(formState);
-        // Here you can handle the form submission. For example, send the form data to a server
+
+        // function to check for valid email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(formState.email)) {
+            alert("Please enter a valid email address");
+            return;
+        }
+
+            // function to check if name is not empty
+        if (formState.name.trim() === "") {
+            alert("Please enter your name");
+            return;
+        }
+
+        // function to check if message is not empty
+        if (formState.message.trim() === "") {
+            alert("Please enter a message");
+            return;
+        }
+
+        console.log('Succesfully Submitted');
     };
 
     return (
@@ -50,7 +70,7 @@ export default function Contact() {
                 onChange={handleChange}
                 />
             </label>
-            <input type="submit" value="SUBMIT" className="submit-btn"/>
+            <input type="submit" value="SUBMIT" className="submit-btn" onSubmit={handleSubmit}/>
         </form>
     );
 }

@@ -9,24 +9,24 @@ export default function Header() {
             <nav>
                 <div className="link-tree">
                     <div className="link-tree">
-                        <a>
+                        <a href="https://www.instagram.com/raydiant.io/" target="_blank" rel="noopener noreferrer">
                             <img src={InstagramIcon} alt="Instagram" className="socialMediaIcon" />
                         </a>
-                        <a>
+                        <a href="https://github.com/Fenaum" target="_blank" rel="noopener noreferrer">
                             <img src={GithubIcon} alt="Github" className="socialMediaIcon" />
                         </a>
-                        <a>
+                        <a href="https://www.youtube.com/channel/UCpU_o87GwZNDgEID50yhaww" target="_blank" rel="noopener noreferrer">
                             <img src={YoutubeIcon} alt="Youtube" className="socialMediaIcon" />
                         </a>
                     </div>
                 </div>
-                <Link to="/" className="my-title">RAYMOND.</Link>
+                <Link to="/" className="my-title" >RAYMOND.</Link>
                 <ul className="links">
                     <li>
-                        <a>About</a>
+                        <Link to="/about" >About</Link>
                     </li>
                     <li>
-                        <Link to="/contact">Contact</Link>
+                        <Link to="/contact" >Contact</Link>
                     </li>
                 </ul>
             </nav>

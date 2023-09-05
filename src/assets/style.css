@@ -84,6 +84,11 @@ ul.links > li, ul.links > li > a {
     padding: 0px 10px;
     list-style: none;
     text-decoration: none;
+
+}
+ul.links > li > a:hover {
+    box-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink);
+    border-radius: 20px;
 }
 
 .my-title{
@@ -95,7 +100,7 @@ ul.links > li, ul.links > li > a {
     text-decoration: none;
 }
 
-.about {
+.home {
     display: flex;
     align-items: center;
     text-align: center;
@@ -114,7 +119,7 @@ ul.links > li, ul.links > li > a {
     color: var(--neon-green)
 }
 
-div.about > section > p {
+div.home > section > p {
     text-align: start;
     color: var(--neon-cream);
 }
@@ -128,17 +133,50 @@ div.about > section > p {
     color: var(--neon-blue);
     padding: 12px 25px;
     border-radius: 5px;
-    border: solid black 1.5px;
+    border: solid var(--neon-pink) 1.5px;
     margin: 0 5px;
-
+    cursor: default;
 }
+
+.contact-link > a {
+    text-decoration: none;
+    color: var(--neon-cream);
+    font-family: 'Orbitron', sans-serif;
+}
+
+.contact-link:hover {
+    box-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink);
+}
+
 .resume-link {
-    background-color: var(--neon-pink);
-    color: var(--neon-blue);
+    background-color: var(--neon-green);
     padding: 12px 25px;
     border-radius: 5px;
-    border: solid black 1.5px;
+    border: solid var(--neon-green) 1.5px;
     margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.resume-link:hover {
+    box-shadow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green);
+    cursor: default;
+}
+
+.resume {
+    color: var(--neon-pink);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.resume > img {
+    margin-left: 4px
 }
 
 .introduction {
@@ -184,15 +222,21 @@ div.about > section > p {
     justify-items: center;
     right: -5px;
     top: 40%;
-    animation: pulse 4s infinite;
+    z-index: 1;
+    transition: transform .5s;
+    text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue), 0 0 30px var(--neon-blue), 0 0 40px var(--neon-blue);
+}
+
+.my-projects:hover {
+    animation: pulse 5s infinite;
+    transform: scale(1.3);
 }
 
 .my-projects-text {
     margin-left: 30px;
-}
+    text-decoration: none;
+    color: var(--neon-blue);
 
-.my-projects-text:hover {
-    cursor: pointer;
 }
 
 .socialMediaIcon {
@@ -207,3 +251,7 @@ div.about > section > p {
     outline: none;
 }
 
+.external-icon {
+    width: 20px;
+    height: 20px;
+}
