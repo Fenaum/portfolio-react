@@ -17,7 +17,7 @@ const startServer = async () => {
         app.use(express.static(resolve(__dirname, "dist")));
     } else {
 
-        const vite = await createServer({ server: { middlewareMode: "true" } });
+        const vite = await createServer({ server: { middlewareMode: false } });
         app.use(vite.middlewares);
     }
 
