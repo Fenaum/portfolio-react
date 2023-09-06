@@ -1,4 +1,4 @@
-import CodeQuiz from "./codeQuiz.png";
+import codeQuiz from "./codeQuiz.png";
 import fashionFusion from "./fashionFusion.png";
 import memeGenerator from "./memeGenerator.png";
 import noteApp from "./noteApp.png";
@@ -42,7 +42,7 @@ const projects = [
   {
     title: "Coding Quiz Game",
     description: "This is project 1",
-    imgUrl: CodeQuiz,
+    imgUrl: codeQuiz,
     url: "https://fenaum.github.io/coding-quiz-uh/",
     githubUrl: "https://github.com/Fenaum/coding-quiz-uh",
     description: "A basic Coding Quiz App using Vanilla Javascript.",
