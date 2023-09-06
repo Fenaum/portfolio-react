@@ -114,7 +114,7 @@
 }
 
 .githublink > img {
-    margin-left: 20px;
+    margin-left: 10px;
 
 }
 
@@ -137,9 +137,9 @@
 }
 
 .projectLink > img {
-    margin-left: 43px;
-    height: 20px;
-    width: 20px;
+    margin-left: 20px;
+    height: 25px;
+    width: 25px;
 }
 
 .projectLink:hover {

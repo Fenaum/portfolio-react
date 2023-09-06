@@ -11,7 +11,7 @@ export default function Portfolio() {
                 <img className='card-img' src={project.imgUrl} alt='project image' ></img>
                 <p className='projectDescription'>{project.description}</p>
                 <a className='githublink' href={project.githubUrl} target='_blank' >
-                    Github <img src={githubImg} alt='github icon' ></img>
+                    Repo <img src={githubImg} alt='github icon' ></img>
                 </a>
                 <a className='projectLink' href={project.url} target='_blank' >
                     App <img src={externalLink} alt='External Link' ></img>
