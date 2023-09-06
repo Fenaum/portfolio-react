@@ -1,4 +1,4 @@
-import CodeQuiz from "./CodeQuiz.png";
+import CodeQuiz from "./codeQuiz.png";
 import fashionFusion from "./fashionFusion.png";
 import memeGenerator from "./memeGenerator.png";
 import noteApp from "./noteApp.png";
