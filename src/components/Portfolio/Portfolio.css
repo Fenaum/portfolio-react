@@ -41,3 +41,27 @@
         text-shadow: 0 0 10px var(--neon-violet), 0 0 20px var(--neon-violet), 0 0 30px var(--neon-violet), 0 0 40px var(--neon-violet);
     }
 }
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 90vw; /* adjust this as needed */
+    height: 80vh;
+    margin: 50px auto;
+}
+
+.project-card {
+    flex-basis: calc(20% + 35px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-bg);
+    margin: 10px;
+    /* Add more styles here */
+}

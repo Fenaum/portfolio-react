@@ -8,7 +8,7 @@ function RingMenu() {
                 Fashion Fusion
             </a>
             <a href="https://note-master-714-cdec4815ebd5.herokuapp.com/" target="_blank" className="ring-button">
-                Note Master
+                Note-App
             </a>
             <a href="https://memesify-be2bdd38706f.herokuapp.com//
                 " target="_blank" className="ring-button">
