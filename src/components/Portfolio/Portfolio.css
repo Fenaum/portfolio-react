@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Karla:wght@200;300;400;500;600;700&family=t:iMontserratal,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
 /* Dark background */
@@ -51,17 +52,98 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    max-width: 90vw; /* adjust this as needed */
+    max-width: 90vw;
     height: 80vh;
-    margin: 50px auto;
+    margin: auto;
+    overflow: auto;
+}
+
+/* hide scrollbar on chrome and safari */
+.portfolio-grid::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar on IE, Edge and Firefox */
+.portfolio-grid {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .project-card {
-    flex-basis: calc(20% + 35px);
+    flex-basis: calc(20% + 59px);
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--dark-bg);
     margin: 10px;
-    /* Add more styles here */
+    box-shadow: 1px 1px 10px 1px var(--neon-green);
+}
+
+.project-card > h3 {
+    color: var(--neon-blue);
+    text-shadow: 0 0 1px var(--neon-blue), 0 0 0px var(--neon-blue), 0 0 10px var(--neon-blue), 0 0 0px var(--neon-blue);
+}
+
+.card-img {
+    height: 200px;
+    width: 280px;
+}
+
+.projectDescription {
+    border: 1px solid var(--neon-blue);
+    width: 280px;
+    height: 120px;
+    margin-top: 30px;
+    padding: 15px;
+    font-family: 'Montserratal', sans-serif;
+    font-size: 14px;
+    overflow: auto;
+    line-height: 1.5;
+}
+
+.githublink {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--neon-green);
+}
+
+.githublink > img {
+    margin-left: 20px;
+
+}
+
+.githublink:hover {
+    text-shadow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green);
+}
+
+.githublink:hover > img {
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green), 0 0 30px var(--neon-green), 0 0 40px var(--neon-green);
+}
+
+.projectLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: var(--neon-pink);
+}
+
+.projectLink > img {
+    margin-left: 43px;
+    height: 20px;
+    width: 20px;
+}
+
+.projectLink:hover {
+    text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink);
+}
+
+.projectLink:hover > img {
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--neon-pink), 0 0 5px var(--neon-pink), 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink);
 }
