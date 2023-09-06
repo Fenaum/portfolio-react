@@ -1,9 +1,9 @@
-import codeQuiz from "./codeQuiz.png";
-import fashionFusion from "./fashionFusion.png";
-import memeGenerator from "./memeGenerator.png";
-import noteApp from "./noteApp.png";
-import travelJournal from "./travelJournal.png";
-import weatherDashboard from "./weatherDashboard.png";
+import codeQuiz from "/public/images/codeQuiz.png";
+import fashionFusion from "/public/images/fashionFusion.png";
+import memeGenerator from "/public/images/memeGenerator.png";
+import noteApp from "/public/images/noteApp.png";
+import travelJournal from "/public/images/travelJournal.png";
+import weatherDashboard from "/public/images/weatherDashboard.png";
 
 const projects = [
   {
