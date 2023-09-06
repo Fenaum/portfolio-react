@@ -44,7 +44,7 @@
 
 .ring-menu {
   position: fixed;
-  right: -48px;
+  right: -20px;
   top: 40%;
   width: 200px;
   height: 200px;
@@ -72,6 +72,7 @@
     background-image: url('./ring.png');
     background-repeat: no-repeat;
     background-size: contain;
+    color: var(--neon-blue);
 }
 
 

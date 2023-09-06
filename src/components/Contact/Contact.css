@@ -17,23 +17,18 @@
 @keyframes pulse {
     0% {
         border-color: var(--neon-blue);
-        text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue), 0 0 30px var(--neon-blue), 0 0 40px var(--neon-blue);
     }
     25% {
         border-color: var(--neon-pink);
-        text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink), 0 0 30px var(--neon-pink), 0 0 40px var(--neon-pink);
     }
     50% {
         border-color: var(--neon-red);
-        text-shadow: 0 0 10px var(--neon-red), 0 0 20px var(--neon-red), 0 0 30px var(--neon-red), 0 0 40px var(--neon-red);
     }
     75% {
         border-color: var(--neon-yellow);
-        text-shadow: 0 0 10px var(--neon-yellow), 0 0 20px var(--neon-yellow), 0 0 30px var(--neon-yellow), 0 0 40px var(--neon-yellow);
     }
     100% {
         border-color: var(--neon-violet);
-        text-shadow: 0 0 10px var(--neon-violet), 0 0 20px var(--neon-violet), 0 0 30px var(--neon-violet), 0 0 40px var(--neon-violet);
     }
 }
 
@@ -80,5 +75,4 @@ label.fields > input, label.fields > textarea {
     margin: 10px auto;
     background-color: var(--neon-cream);
     border: solid 3px;
-    animation: pulse 4s infinite;
 }
