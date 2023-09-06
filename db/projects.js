@@ -1,5 +1,3 @@
-// File: db/projects.js
-
 const projects = [
     {
         title: "Fashion Fusion",
