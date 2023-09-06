@@ -84,8 +84,8 @@ ul.links > li, ul.links > li > a {
     padding: 0px 10px;
     list-style: none;
     text-decoration: none;
-
 }
+
 ul.links > li > a:hover {
     text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink);
     border-radius: 20px;
