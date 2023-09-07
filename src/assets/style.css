@@ -124,8 +124,12 @@ div.home > section > p {
     color: var(--neon-cream);
 }
 
-.links-button {
+.links-buttons {
     display: flex;
+
+}
+.links-buttons > a {
+    text-decoration: none;
 }
 
 .contact-link {
@@ -135,13 +139,11 @@ div.home > section > p {
     border-radius: 5px;
     border: solid var(--neon-pink) 1.5px;
     margin: 0 5px;
-    cursor: default;
-}
-
-.contact-link > a {
-    text-decoration: none;
     color: var(--neon-cream);
     font-family: 'Orbitron', sans-serif;
+    width: 130px;
+    height: 45px;
+    margin-left: 10px;
 }
 
 .contact-link:hover {
@@ -158,24 +160,21 @@ div.home > section > p {
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: var(--neon-pink);
+    margin: auto;
+    font-family: 'Orbitron', sans-serif;
+    width: 130px;
+    height: 45px;
 }
+
 
 .resume-link:hover {
     box-shadow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green);
-    cursor: default;
 }
 
-.resume {
-    color: var(--neon-pink);
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    font-family: 'Orbitron', sans-serif;
-}
 
-.resume > img {
+
+.resume-link > img {
     margin-left: 4px
 }
 

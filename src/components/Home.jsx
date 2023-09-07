@@ -12,17 +12,17 @@ export default function Home() {
                     <span id="developer-role"> Front-end Developer</span>
                 </h2>
                 <p>Building Beautiful UIs, One React Component at a Time.</p>
-                    <div className="links-button">
-                        <button className="resume-link">
-                            <a href="https://docs.google.com/document/d/1cPPrVMeQnm8LUGbE-LPDBTgGhnBnD-uGOlWO_DdARyw/edit?usp=sharing" className="resume" target="blank" rel="noopener noreferrer" >
-                                Resume <img src={externalLinkIcon} alt="Resume Icon" className="external-icon"/>
-                            </a>
-                        </button>
-                        <button className="contact-link">
-                            <Link to="/contact">
+                    <div className="links-buttons">
+                        <a href="https://docs.google.com/document/d/1cPPrVMeQnm8LUGbE-LPDBTgGhnBnD-uGOlWO_DdARyw/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <button className="resume-link">
+                                <span>Resume</span> <img src={externalLinkIcon} alt="Resume Icon" className="external-icon"/>
+                            </button>
+                        </a>
+                        <Link to="/contact">
+                            <button className="contact-link">
                                 Let's talk!
-                            </Link>
-                        </button>
+                            </button>
+                        </Link>
                     </div>
             </section>
             <hr></hr>
