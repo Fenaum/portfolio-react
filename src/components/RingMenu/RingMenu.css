@@ -121,3 +121,28 @@
   transform: rotate(-180deg) translateY(-230px) scale(1.8) rotate(540deg); animation: pulse 4s infinite;
 }
 
+
+.ring-button::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('./ring.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.ring-button:hover::before {
+    animation: spin 4s linear infinite;
+}
+
+.ring-button:hover {
+    background-image: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
