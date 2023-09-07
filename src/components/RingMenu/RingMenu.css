@@ -61,7 +61,6 @@
     text-decoration: none;
     border-radius: 50%;
     border: .20px;
-    border-style: dashed;
     background: transparent;
     transition: transform .3s ease-in-out;
     text-align: center;
@@ -131,7 +130,7 @@
     background-image: url('./ring.png');
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: -1;
+    z-index: -.3;
 }
 
 .ring-button:hover::before {
