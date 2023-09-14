@@ -210,7 +210,7 @@ div.home > section > p {
 
 .my-projects {
     color: var(--neon-blue);
-    position: fixed;
+    position: relative;
     background-image: url(../components/RingMenu/myprojects.png);
     background-size: 200px;
     width: 200px;
@@ -219,7 +219,7 @@ div.home > section > p {
     text-align: center;
     align-items: center;
     justify-items: center;
-    right: -5px;
+    right: -250px;
     top: 40%;
     z-index: 1;
     transition: transform .5s;
