@@ -6,6 +6,7 @@ import About from "./components/About/About"
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
 import "./assets/style.css";
+import "./assets/responsive-style.css"
 
 export default function App() {
   return (

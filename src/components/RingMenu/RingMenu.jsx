@@ -1,6 +1,7 @@
 import React from "react";
 import "./RingMenu.css";
 
+
 function RingMenu() {
     return (
         <div className="ring-menu">

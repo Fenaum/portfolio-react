@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px) {
+  .my-title {
+    font-size: 1rem;
+  }
+
+  ul.links > li, ul.links > li > a {
+    padding: .5rem;
+    font-size: .75rem; 
+    }
+  
+}

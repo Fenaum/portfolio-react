@@ -8,7 +8,6 @@ export default function Header() {
         <header className="Header">
             <nav>
                 <div className="link-tree">
-                    <div className="link-tree">
                         <a href="https://www.instagram.com/raydiant.io/" target="_blank" rel="noopener noreferrer">
                             <img src={InstagramIcon} alt="Instagram" className="socialMediaIcon" />
                         </a>
@@ -18,7 +17,6 @@ export default function Header() {
                         <a href="https://www.youtube.com/channel/UCpU_o87GwZNDgEID50yhaww" target="_blank" rel="noopener noreferrer">
                             <img src={YoutubeIcon} alt="Youtube" className="socialMediaIcon" />
                         </a>
-                    </div>
                 </div>
                 <Link to="/" className="my-title" >RAYMOND.</Link>
                 <ul className="links">
